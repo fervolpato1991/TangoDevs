@@ -1,7 +1,8 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout/Layout';
 import { useState } from 'react';
+import { Contact, Home, SideBar, Proyects } from './components/index';
+
 
 function App() {  
   const localLanguage= navigator.language.toLowerCase()
@@ -18,8 +19,11 @@ function App() {
 
   return (
     <div>
+      <SideBar/>
       <Routes>
-        <Route path='/' element={<Layout/>}/>
+        <Route path='/' element={<Home/>}/>
+        <Route path='contact' element={<Contact/>}/>
+        <Route path='proyects' element={<Proyects/>}/>
       </Routes>
     </div>
   );
