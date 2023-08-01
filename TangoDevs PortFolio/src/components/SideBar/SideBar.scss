@@ -1,0 +1,48 @@
+.navBar {
+    background: #181818;
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    min-height: 500px;
+
+    .logo {
+        display: block;
+        padding: auto auto;
+
+        img {
+            display: block;
+            margin: auto auto;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+        position: absolute;
+        height: 200px;
+        top: 50%;
+        margin-top: -100px;
+        width: 100%;
+
+        a {
+            font-size: 22px;
+            color: #4d4d4d;
+            display: block;
+            line-height: 50px;
+            height: 50px;
+            position: relative;
+            text-decoration: none;
+
+            i {
+                transition: all 1s ease-out;
+            }
+            &:hover {
+                color: #c02203;
+            }
+        }
+    }
+}
