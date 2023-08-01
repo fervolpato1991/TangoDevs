@@ -8,8 +8,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #444;
-  background: #022c43;
+  color: var(--text-color);
+  background: var(--background-color);
   overflow: hidden;
   display: block;
 }
+
+:root {
+  --accent-color: #e50e0e ;
+  --foreground-color: #8f1414;
+  --background-color:#000000;
+  --text-color:#ffe3b2 ;
+  --link-color:#fcac03;
+}
+
