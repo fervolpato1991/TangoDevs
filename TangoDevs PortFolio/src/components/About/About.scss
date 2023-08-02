@@ -1,0 +1,21 @@
+
+    .text-zone{
+        position: absolute;
+        left: 10%;
+        top: 25%;
+        width: 40%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+        color: black;
+    }
+
+    .container-persons{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .persons{
+        left: 1em;
+        top: 1em;
+        bottom: 1em;
+    }
