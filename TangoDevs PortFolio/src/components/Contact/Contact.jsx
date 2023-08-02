@@ -1,8 +1,7 @@
 import './Contact.scss';
-// import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Contact = () => {
-    // const [letterClass, setLetterClass] = useState('text-animate');
     return (
         <div className='contactContainer'>
             <div className='text'>
@@ -19,8 +18,8 @@ const Contact = () => {
                     <input type="number" id="telefono" placeholder='Numero de Telefono'/>
                     <input type="text" id="asunto" placeholder='Asunto del Email'/>
                     </div>
-                    <textarea id="mensaje" placeholder='Escribe tu mensaje'></textarea>
-                    <input type="submit" id="enviar" placeholder='Enviar mensaje'/>
+                    <textarea id="mensaje" cols="30" rows="10" placeholder='Escribe tu mensaje'></textarea>
+                    <input type="submit" id="enviar" placeholder='Enviar mensaje' className='boton'/>
                 </form>
             </div>
         </div>
