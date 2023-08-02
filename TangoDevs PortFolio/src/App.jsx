@@ -1,14 +1,17 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
-import { Contact, Home, SideBar, Proyects } from './components/index';
+import { Contact, Home, SideBar, Proyects, About } from './components/index';
 
 
 function App() {  
   const localLanguage= navigator.language.toLowerCase()
   const [language, setLanguage] = useState(localLanguage.startsWith('es')? 'es': 'en')
 
-  console.log(language);
+  let docTitle = document.title;
+  window.addEventListener("blur", ()=>{document.title= "Don't leave us "})
+
+  window.addEventListener("focus", ()=>document.title= docTitle)
 
   const changeLanguageEN=()=>{
     if(language !== 'en') setLanguage('en')
@@ -24,6 +27,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='contact' element={<Contact/>}/>
         <Route path='proyects' element={<Proyects/>}/>
+        <Route path='/about' element={<About/>} />
       </Routes>
     </div>
   );
