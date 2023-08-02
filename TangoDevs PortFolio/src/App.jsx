@@ -1,7 +1,7 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
-import { Contact, Home, SideBar, Proyects, About } from './components/index';
+import { Contact, Home, SideBar, Projects, About } from './components/index';
 
 
 function App() {  
@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='contact' element={<Contact/>}/>
-        <Route path='proyects' element={<Proyects/>}/>
+        <Route path='projects' element={<Projects/>}/>
         <Route path='/about' element={<About/>} />
       </Routes>
     </div>
