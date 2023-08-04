@@ -1,3 +1,20 @@
+.project-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h3, h2 {
+    margin: 0;
+    font-size: 20px;
+     color:rgb(226, 226, 226);
+  }
+
+  p {
+    margin: 8px 0;
+    font-size: 16px;
+    color:rgb(226, 226, 226);
+  }
 
 .project-grid {
   display: grid;
@@ -12,7 +29,6 @@
   justify-content: center;
   border: 1px solid #e1e1e1;
   border-radius: 8px;
-  overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   width: 50%;
@@ -33,18 +49,6 @@
   .project-content {
     padding: 16px;
     flex: 1;
-
-    h3 {
-      margin: 0;
-      font-size: 20px;
-       color:rgb(226, 226, 226);
-    }
-
-    p {
-      margin: 8px 0;
-      font-size: 16px;
-      color:rgb(226, 226, 226);
-    }
 
     .project-links {
       display: flex;
@@ -87,4 +91,5 @@
       font-weight: bold;
     }
   }
+}
 }
