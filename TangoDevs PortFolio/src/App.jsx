@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import { Contact, Home, SideBar, Projects, About } from './components/index';
 
-
 function App() {  
   const localLanguage= navigator.language.toLowerCase()
   const [language, setLanguage] = useState(localLanguage.startsWith('es')? 'es': 'en')
@@ -14,20 +13,20 @@ function App() {
   window.addEventListener("focus", ()=>document.title= docTitle)
 
   const changeLanguageEN=()=>{
-    if(language !== 'en') setLanguage('en')
+    setLanguage('en')
   }
   const changeLanguageES=()=>{
-    if (language !== 'es') setLanguage('es')
+    setLanguage('es')
   }
 
   return (
     <div>
-      <SideBar/>
+      <SideBar language={language} changeLanguageEN={changeLanguageEN} changeLanguageES={changeLanguageES} />
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='contact' element={<Contact/>}/>
         <Route path='projects' element={<Projects/>}/>
-        <Route path='/about' element={<About/>} />
+        <Route path='/about' element={<About language={language} />} />
       </Routes>
     </div>
   );
