@@ -1,56 +1,39 @@
 import { AboutEn, AboutEn2, AboutEs, AboutEs2, descriptionNahueEs } from "../../Extra/texts"
 import './About.scss'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { teamMembers } from "../ProjectData/ProjectData";
 
 
-const About = ({language})=>{
-
-
-    return(
-        <div className='about-page'>
+const About = ({ language }) => {
+    return (
+      <div className='about-page'>
         <div className='text-zone'>
-        <h1>
-            {language=== 'es' ? 'Sobre nosotros' : 'About Us'}
-        </h1>
-        <p>{language === 'es'? AboutEs : AboutEn}</p>
-        <h2>{language === 'es'? AboutEs2 : AboutEn2}</h2>
-        <div className="container-persons">
-            <section className="persons">
-                <h1>Fernando</h1>
-                <img src="" alt="foto de la persona" />
-                <p></p>
-                <p>{language === 'es' ? 'Esta persona se especializa en: ' : 'The speciality of this member is:'}</p>
-            </section>
-            <section className="persons">
-                <h1>Gisella</h1>
-                <img src="" alt="foto de la persona" />
-                <p></p>
-                <p>{language === 'es' ? 'Esta persona se especializa en: ' : 'The speciality of this member is:'}</p>
-            </section>
-            <section className="persons">
-                <h1>Nahuel</h1>
-                <img src="" alt="foto de la persona" />
-                <p>{language === 'es' ? descriptionNahueEs : descriptionNahueEs }</p>
-                <p>{language === 'es' ? 'Esta persona se especializa en: ' : 'The speciality of this member is:'} Front-End</p>
-            </section>
-            <section className="persons">
-                <h1>Rodrigo</h1>
-                <img src="" alt="foto de la persona" />
-                <p></p>
-                <p>{language === 'es' ? 'Esta persona se especializa en: ' : 'The speciality of this member is:'}</p>
-            </section>
-            <section className="persons">
-                <h1>Santiago</h1>
-                <img src="" alt="foto de la persona" />
-                <p></p>
-                <p>{language === 'es' ? 'Esta persona se especializa en: ' : 'The speciality of this member is:'}</p>
-            </section>
+          <h1>
+            {language === 'es' ? 'Sobre nosotros' : 'About Us'}
+          </h1>
+          <p>{language === 'es' ? AboutEs : AboutEn}</p>
+          <h2>{language === 'es' ? AboutEs2 : AboutEn2}</h2>
+          <div className="container-persons">
+            {teamMembers.map((member) => (
+              <section className="persons" key={member.id}>
+                <h1>{member.name}</h1>
+                <img src={member.profileImage} alt={`foto de ${member.name}`} />
+                <p>{language === 'es' ? `Esta persona se especializa en: ${member.specialization}` : `The speciality of this member is: ${member.specialization}`}</p>
+                <div className="social-icons">
+                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                  </a>
+                  <a href={member.github} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faGithub} size="lg" />
+                  </a>
+                </div>
+              </section>
+            ))}
+          </div>
         </div>
-
-        </div>
-
-    </div>
-
-    )
-}
-
-export default About
+      </div>
+    );
+  };
+  
+  export default About;
