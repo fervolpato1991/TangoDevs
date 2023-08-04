@@ -3,7 +3,8 @@ import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faComment , faCode } from '@fortawesome/free-solid-svg-icons';
  
-const SideBar = () => {
+const SideBar = ({language, changeLanguageEN, changeLanguageES}) => {
+
     return (
         <div className='navBar'>
             <Link to='/' className='logo'>
@@ -22,6 +23,8 @@ const SideBar = () => {
                 <NavLink exact="true" activeclassname="active" className="project" to="/projects">
                     <FontAwesomeIcon icon={faCode} color="4d4d4e"/>
                 </NavLink>
+
+                <button onClick={language === 'es' ? ()=>changeLanguageEN() : ()=>changeLanguageES()}>{language=== 'es' ? 'EN' : 'ES'}</button>
             </nav>
         </div>
     )

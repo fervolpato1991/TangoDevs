@@ -1,7 +1,9 @@
 import { AboutEn, AboutEn2, AboutEs, AboutEs2, descriptionNahueEs } from "../../Extra/texts"
 import './About.scss'
 
+
 const About = ({language})=>{
+
 
     return(
         <div className='about-page'>
@@ -15,7 +17,7 @@ const About = ({language})=>{
             <section className="persons">
                 <h1>Fernando</h1>
                 <img src="" alt="foto de la persona" />
-                <p>Gisella</p>
+                <p></p>
                 <p>{language === 'es' ? 'Esta persona se especializa en: ' : 'The speciality of this member is:'}</p>
             </section>
             <section className="persons">
