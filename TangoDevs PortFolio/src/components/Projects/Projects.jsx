@@ -1,8 +1,8 @@
 import ProjectCard from '../ProjectCard/ProjectCard';
-import projectsData from '../ProjectData/ProjectData';
+import projects from '../ProjectData/ProjectData';
 
 const Projects = () => {
-  if (!projectsData || projectsData.length === 0) {
+  if (!projects || projects.length === 0) {
     return <div>No hay proyectos para mostrar.</div>;
   }
 
@@ -16,7 +16,7 @@ const Projects = () => {
         </p>
       </div>
       <div className="project-grid">
-        {projectsData.map((project) => (
+        {projects.map((project) => (
           <ProjectCard key={project.id} projectData={project} />
         ))}
       </div>
