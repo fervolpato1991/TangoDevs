@@ -1,5 +1,5 @@
 import ProjectCard from '../ProjectCard/ProjectCard';
-import projects from '../ProjectData/ProjectData';
+import { projects } from '../../Extra/Constants';
 
 const Projects = () => {
   if (!projects || projects.length === 0) {

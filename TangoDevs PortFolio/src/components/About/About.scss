@@ -1,55 +1,55 @@
-.about-page {
-   
-    .text-zone{
-        position: absolute;
-        left: 10%;
-        top: 25%;
-        width: 40%;
-        vertical-align: middle;
-        display: table-cell;
-        max-height: 90%;
-        color: black;
+
+.container-persons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; // Espacio entre los miembros
+
+  .persons {
+    display: flex;
+    flex-direction: column; // Alinear elementos en columna
+    align-items: center; // Centrar elementos horizontalmente
+    flex-basis: calc(50% - 40px); // Dos miembros por fila, restando el espacio entre ellos
+    max-width: 300px; // Tamaño máximo para los miembros
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px; // Espacio entre filas
+
+    @media (max-width: 768px) {
+      flex-basis: calc(33.33% - 40px); // Tres miembros por fila en pantallas más pequeñas
     }
 
-    .container-persons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 50px;
-  
-        .persons {
-          flex-basis: calc(33.33% - 20px);
-          padding: 20px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          text-align: center;
-  
-          h1 {
-            font-size: 20px;
-            margin-bottom: 10px;
-          }
-  
-          img {
-            width: 150px;
-            height: 150px; 
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 10px;
-          }
-  
-          p {
-            font-size: 16px;
-            margin-bottom: 10px;
-          }
-  
-          .social-icons {
-            display: flex;
-            justify-content: center;
-  
-            a {
-              margin: 5px;
-            }
-          }
-        }
+    @media (max-width: 480px) {
+      flex-basis: 100%; // Mostrar un miembro por fila en pantallas muy pequeñas
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+
+      a {
+        margin: 5px;
       }
     }
+  }
+}
