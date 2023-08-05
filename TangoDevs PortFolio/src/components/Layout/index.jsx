@@ -1,14 +1,7 @@
-import './Layout.scss';
-<<<<<<< Updated upstream
-import SideBar from '../SideBar/SideBar';
+import { Outlet } from 'react-router-dom'
+import Sidebar from '../Sidebar/'
+import './index.scss'
 
-const Layout = () => {
-    return (
-        <SideBar/>
-    )
-}
-=======
-import Sidebar from '../SideBar';
 
 const Layout = () => {
     return (
@@ -27,7 +20,5 @@ const Layout = () => {
     </div>
         
         )}
-
->>>>>>> Stashed changes
 
 export default Layout;
