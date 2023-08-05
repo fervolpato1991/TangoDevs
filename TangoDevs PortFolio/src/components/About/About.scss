@@ -1,3 +1,5 @@
+.text-zone {
+  text-align: center;
 
 .container-persons {
   display: flex;
@@ -10,7 +12,7 @@
     flex-direction: column; // Alinear elementos en columna
     align-items: center; // Centrar elementos horizontalmente
     flex-basis: calc(50% - 40px); // Dos miembros por fila, restando el espacio entre ellos
-    max-width: 300px; // Tamaño máximo para los miembros
+    max-width: 150px; // Tamaño máximo para los miembros
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -52,4 +54,5 @@
       }
     }
   }
+}
 }
