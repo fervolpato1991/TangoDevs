@@ -1,0 +1,43 @@
+.contactContainer {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    width: 100%;
+
+    .text {
+        h1, p {
+            color: aliceblue;
+        }
+        .boxes {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;        
+            
+            input {
+                width: 100%;
+                padding: 1.5rem;
+                font-size: 1.6rem;
+                border-radius: .8rem;
+                margin: .7rem 0;
+                box-shadow: 0 .1rem .5rem;
+            }
+
+        }
+        textarea {
+            width: 90%;
+            padding: 1.5rem;
+            font-size: 1.6rem;
+            border-radius: .8rem;
+            margin: .7rem 0;
+            box-shadow: 0 .1rem .5rem;
+        }
+        .boton {
+            display: inline-block;
+            padding: 1.2rem 2.8rem;
+            border-radius: .6rem;
+            box-shadow: 0 .2rem .5rem;
+            letter-spacing: .1rem;
+            font-weight: 600;
+        }
+    }
+}

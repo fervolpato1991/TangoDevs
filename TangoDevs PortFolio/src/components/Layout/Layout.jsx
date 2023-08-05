@@ -1,13 +1,4 @@
 import './Layout.scss';
-<<<<<<< Updated upstream
-import SideBar from '../SideBar/SideBar';
-
-const Layout = () => {
-    return (
-        <SideBar/>
-    )
-}
-=======
 import Sidebar from '../SideBar';
 
 const Layout = () => {
@@ -28,6 +19,5 @@ const Layout = () => {
         
         )}
 
->>>>>>> Stashed changes
 
 export default Layout;
