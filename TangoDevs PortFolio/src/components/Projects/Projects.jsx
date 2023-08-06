@@ -1,5 +1,5 @@
 import ProjectCard from '../ProjectCard/ProjectCard';
-import { projects } from '../../Extra/Constants';
+import { projects } from '../../Constants/index';
 
 const Projects = () => {
   if (!projects || projects.length === 0) {
@@ -10,10 +10,6 @@ const Projects = () => {
     <div className='project-container'>
       <div className='intro'>
         <h3>Conoce nuestros proyectos:</h3>
-        <p>
-          En esta sección encontrarás algunos de los proyectos
-          en los que hemos estado trabajando:
-        </p>
       </div>
       <div className="project-grid">
         {projects.map((project) => (

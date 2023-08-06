@@ -59,6 +59,6 @@ export const projects = [
       id: 5,
       name: 'Santiago',
       specialization: 'Full-Stack',
-      profileImage: 'ruta/de/la/foto-de-nahuel.jpg',
+      profileImage: '',
     },
   ];

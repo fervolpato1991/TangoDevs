@@ -1,8 +1,8 @@
-import { AboutEn, AboutEn2, AboutEs, AboutEs2, descriptionNahueEs } from "../../Extra/Constants"
+import { AboutEn, AboutEn2, AboutEs, AboutEs2, descriptionNahueEs } from "../../Constants"
 import './About.scss'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { teamMembers } from "../../Extra/Constants";
+import { teamMembers } from "../../Constants/index";
 
 
 const About = ({ language }) => {
