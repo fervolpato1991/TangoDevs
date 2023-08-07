@@ -2,12 +2,13 @@ import './index.scss';
 import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import logo from '../../assets/images/logo-s.png'
  
 const SideBar = () => {
     return (
         <div className='navBar'>
             <Link to='/' className='logo'>
-                <img src="" alt="TangoDevsLogo"/>
+                <img src={logo} alt="TangoDevsLogo"/>
             </Link>
             <nav>
                 <NavLink exact="true" activeclassname="active" to="/">

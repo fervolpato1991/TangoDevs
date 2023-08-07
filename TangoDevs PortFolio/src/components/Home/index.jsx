@@ -2,42 +2,16 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import Animations from '../Animations'
-import Logo from './Logo/index'
 import './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   const nameArray = ['T', 'a', 'n', 'g', 'o', 'D', 'e', 'v', 's']
-  const jobArray = [
-    'A',
-    'r',
-    'g',
-    'e',
-    'n',
-    't',
-    'i',
-    'n',
-    'i',
-    'a',
-    'n',
-    's',
-    ' ',
-    'D',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-    's',
-
-  ]
+  const jobArray = [ 'A','r','g','e','n','t','i','n','i','a','n',' ','D','e','v','e','l','o','p','e','r','s',' ','U','n','i','t','e','d'   ]
 
   useEffect(() => {
-    return setTimeout(() => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
   }, [])
@@ -48,10 +22,10 @@ const Home = () => {
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
+            <span className={`${letterClass} _12`}> i, </span>
             <br />
-            <span className={`${letterClass} _13`}>We</span>
-            <span className={`${letterClass} _14`}>Are</span>
+            <span className={`${letterClass} _13`}> We </span>
+            <span className={`${letterClass} _14`}> Are </span>
             
             <Animations
               letterClass={letterClass}
@@ -62,7 +36,7 @@ const Home = () => {
             <Animations
               letterClass={letterClass}
               strArray={jobArray}
-              idx={22}
+              idx={0}
             />
           </h1>
           <h2>Fullstack Developers // Creaive Web Design & Development</h2>

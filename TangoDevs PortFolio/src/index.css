@@ -10,8 +10,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--text-color);
   background: var(--foreground-color);
-  overflow: hidden;
   display: block;
+ 
 }
 
 :root {
