@@ -36,7 +36,7 @@ const Home = () => {
             <Animations
               letterClass={letterClass}
               strArray={jobArray}
-              idx={0}
+              idx={25}
             />
           </h1>
           <h2>Fullstack Developers // Creaive Web Design & Development</h2>
