@@ -39,7 +39,7 @@ const Contact = () => {
           <h1>
             <Animations
               letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'u', 's']}
               idx={15}
             />
           </h1>
