@@ -23,8 +23,6 @@ const SideBar = () => {
                 <NavLink exact="true" activeclassname="active" className="project" to="/projects">
                     <FontAwesomeIcon icon={faCode} color="4d4d4e"/>
                 </NavLink>
-
-                <button onClick={language === 'es' ? ()=>changeLanguageEN() : ()=>changeLanguageES()}>{language=== 'es' ? 'EN' : 'ES'}</button>
             </nav>
         </div>
     )
