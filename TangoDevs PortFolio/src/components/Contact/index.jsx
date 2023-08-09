@@ -11,26 +11,26 @@ const Contact = () => {
   const form = useRef()
 
   useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+    setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 3000);
+  }, []);
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault()
+  const sendEmail = (e) => {
+    e.preventDefault()
 
-  //   emailjs
-  //     .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
-  //     .then(
-  //       () => {
-  //         alert('Message successfully sent!')
-  //         window.location.reload(false)
-  //       },
-  //       () => {
-  //         alert('Failed to send the message, please try again')
-  //       }
-  //     )
-  // }
+    emailjs
+      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
+      .then(
+        () => {
+          alert('Message successfully sent!')
+          window.location.reload(false)
+        },
+        () => {
+          alert('Failed to send the message, please try again')
+        }
+      )
+  }
 
   return (
     <>
@@ -98,7 +98,7 @@ const Contact = () => {
           <MapContainer center={[44.96366, 19.61045]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[44.96366, 19.61045]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
+              <Popup>Sloba lives here, come over for a cup of coffee :</Popup>
             </Marker>
           </MapContainer>
         </div>
