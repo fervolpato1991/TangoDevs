@@ -17,7 +17,7 @@ const About = ({ language }) => {
   }, [])
 
     return (
-      <div className="container about-page">
+      <div className="container-about-page">
         <div className='text-zone'>
         <h1>
             <Animations
@@ -30,6 +30,8 @@ const About = ({ language }) => {
           <h2>{language === 'es' ? aboutEs.subtext : aboutEn.subtext}</h2>
           <div className="container-persons">
             {teamMembers.map((member) => (
+
+
               <section className="members" key={member.id}>
                 <h1>{member.name}</h1>
                 <img src={member.profileImage} alt={`foto de ${member.name}`} />
@@ -44,34 +46,11 @@ const About = ({ language }) => {
                   </a>
                 </div>
               </section>
+
+              
             ))}
           </div>
-          <div className="stage-cube-cont">
-          <div className="cubespinner">
-            <div className="face1">
-              <img src={faFigma} color="#DD0031" />
-            </div>
-
-            <div className="face2">
-              <img src={faNodejs} color="#F06529" />
-            </div>
-            <div className="face3">
-              <img src={faTailwind} color="#28A4D9" />
-            </div>
-            <div className="face4">
-              <img src={faReact} color="#5ED4F4" />
-            </div>
-            <div className="face5">
-              <img src={faGit} color="#EFD81D" />
-            </div>
-            <div className="face6">
-              <img src={faFigma} color="#EC4D28" />
-            </div>
-            <div className="face6">
-              <img src={faMongodb} color="#EC4D28" />
-            </div>
-          </div>
-        </div>
+   
       </div>
       </div>
     );
