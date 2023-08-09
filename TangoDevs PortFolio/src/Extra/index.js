@@ -10,7 +10,7 @@ const aboutEn = [
       name: 'Fernando',
       specialization: 'Front-End',
       profileImage: 'https://avatars.githubusercontent.com/u/118305965?s=400&u=485f73d77d9b7dd3f3ec80f66f9e263448034945&v=4',
-      descriptionEn : "Hi! I'm a front-end developer",
+      descriptionEn : "I am a full stack developer currently more oriented to the frontend, with a background in law, I have knowledge in PERN technology, and in libraries such as tailwind, I consider myself a serious and analytical person, with aspirations to work in groups to develop projects such as web pages and in a future creation of videogames or cybersecurity.  ",
       descriptionEs : "Soy desarrollador full stack actualmente mas orientado al frontend, con background en abogacia, poseo conocimientos en tecnologia PERN, y en librerias como tailwind, me considero una persona que seria y analitica, con  aspiraciones a trabajar en grupos desarrollen proyectos tales como paginas web y en un futuro creación de videojuegos o ciberseguridad."
     },
     {
@@ -18,8 +18,8 @@ const aboutEn = [
       name: 'Gisella',
       specialization: 'Game Designer, Creative Developer',
       profileImage: 'https://avatars.githubusercontent.com/u/124207301?v=4',
-      descriptionEn : "Hi! Im a creative fullstack developer and game designer",
-      descriptionEs : "Hola! Soy una desarrolladora fullstack creativa y diseñadora de videojuegos"
+      descriptionEn : "Hello! I'm a creative fullstack developer and game designer, I specialize in thinking outside the box, making cat memes and developing and programming everything that has to do with creative design",
+      descriptionEs : "Hola! Soy una desarrolladora fullstack creativa y diseñadora de videojuegos, me especializo en pensar fuera de cajas, hacer memes y desarrollar y programar todo lo que tenga que ver con diseño creativo."
     },
     {
       id: 3,

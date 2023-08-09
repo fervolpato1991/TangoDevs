@@ -36,7 +36,7 @@ const About = ({ language }) => {
                 <h1>{member.name}</h1>
                 <img src={member.profileImage} alt={`foto de ${member.name}`} />
                 <p>{language === 'es' ? `Esta persona se especializa en: ${member.specialization}` : `The speciality of this member is: ${member.specialization}`}</p>
-                <p>{language === 'es' ? `Descripcion: ${member.descriptionEs}` : `Description: ${member.descriptionEn}`}</p>
+                <p>{language === 'es' ? ` ${member.descriptionEs}` : ` ${member.descriptionEn}`}</p>
                 <div className="social-srcs">
                   <a className='linkedin' href={member.linkedin} target="_blank" rel="noopener noreferrer">
                     <img style={{width: '50px'}} src={faLinkedin} />
