@@ -10,7 +10,8 @@ const aboutEn = [
       name: 'Fernando',
       specialization: 'Front-End',
       profileImage: 'https://avatars.githubusercontent.com/u/118305965?s=400&u=485f73d77d9b7dd3f3ec80f66f9e263448034945&v=4',
-
+      descriptionEn : "Hi! I'm a front-end developer",
+      descriptionEs : "Soy desarrollador full stack actualmente mas orientado al frontend, con background en abogacia, poseo conocimientos en tecnologia PERN, y en librerias como tailwind, me considero una persona que seria y analitica, con  aspiraciones a trabajar en grupos desarrollen proyectos tales como paginas web y en un futuro creación de videojuegos o ciberseguridad."
     },
     {
       id: 2,
@@ -40,7 +41,9 @@ const aboutEn = [
       id: 5,
       name: 'Santiago',
       specialization: 'Full-Stack',
-      profileImage: 'ruta/de/la/foto-de-nahuel.jpg',
+      profileImage: 'https://scontent.fmdq6-1.fna.fbcdn.net/v/t39.30808-6/262592212_4627071680705321_418512524188058664_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_eui2=AeEK44Pc6TfSVdUnowzxMOzyg1_nTFJZaVeDX-dMUllpV1FOgzV2LlAZS__gco1ifT8FrlpecrE74-1H7BHIss7V&_nc_ohc=OnkfXzzO84MAX_LsBjf&_nc_ht=scontent.fmdq6-1.fna&oh=00_AfCMm0RMqH6-z76oTe-G4o1N10X51VK9tpJQQaGjpWWlLw&oe=64D8EB68',
+      descriptionEs : 'Heyyo MFs ',
+      descriptionEn : 'Too vieja.'
     },
   ];
 
