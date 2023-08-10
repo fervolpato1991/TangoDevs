@@ -16,21 +16,26 @@ const Contact = () => {
     }, 3000);
   }, []);
 
-  const sendEmail = (e) => {
-    e.preventDefault()
-
+  const sendEmail = (event) => {
+    event.preventDefault();
+  
+    const userId = 'ePsTtr0xZJnMgBKZH';
+    const serviceId = 'service_6jw38uh';
+    const templateId = 'template_o3j1oh7';
+  
     emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
-      .then(
-        () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
-        },
-        () => {
-          alert('Failed to send the message, please try again')
-        }
-      )
-  }
+  .sendForm(serviceId, templateId, form.current, userId)
+  .then(
+    () => {
+      alert('Message successfully sent!');
+      window.location.reload(false);
+    }
+  )
+  .catch((error) => {
+    console.error('Failed to send the message:', error);
+    alert('Failed to send the message, please try again');
+  });
+  };
 
   return (
     <>
@@ -44,15 +49,15 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially on ambitious
+            We are interested in freelance opportunities - especially on ambitious
             or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
+            questions, don't hesitate to contact us using below form either.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
+                  <input placeholder="Name" type="text" name="from_name" required />
                 </li>
                 <li className="half">
                   <input
@@ -83,24 +88,6 @@ const Contact = () => {
               </ul>
             </form>
           </div>
-        </div>
-        <div className="info-map">
-          Slobodan Gajić,
-          <br />
-          Serbia,
-          <br />
-          Branka RadiČevića 19, 22000 <br />
-          Sremska Mitrovica <br />
-          <br />
-          <span>freelancerslobodan@gmail.com</span>
-        </div>
-        <div className="map-wrap">
-          <MapContainer center={[44.96366, 19.61045]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :</Popup>
-            </Marker>
-          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />
