@@ -11,7 +11,9 @@ const aboutEn = [
       specialization: 'Front-End',
       profileImage: 'https://avatars.githubusercontent.com/u/118305965?s=400&u=485f73d77d9b7dd3f3ec80f66f9e263448034945&v=4',
       descriptionEn : "Hi! I'm a front-end developer",
-      descriptionEs : "Soy desarrollador full stack actualmente mas orientado al frontend, con background en abogacia, poseo conocimientos en tecnologia PERN, y en librerias como tailwind, me considero una persona que seria y analitica, con  aspiraciones a trabajar en grupos desarrollen proyectos tales como paginas web y en un futuro creación de videojuegos o ciberseguridad."
+      descriptionEs : "Soy desarrollador full stack actualmente mas orientado al frontend, con background en abogacia, poseo conocimientos en tecnologia PERN, y en librerias como tailwind, me considero una persona que seria y analitica, con  aspiraciones a trabajar en grupos desarrollen proyectos tales como paginas web y en un futuro creación de videojuegos o ciberseguridad.",
+      github: 'https://github.com/fervolpato1991',
+      linkedin: 'https://www.linkedin.com/in/fernando-volpato-5bb718217/',
     },
     {
       id: 2,
@@ -19,7 +21,9 @@ const aboutEn = [
       specialization: 'Game Designer, Creative Developer',
       profileImage: 'https://avatars.githubusercontent.com/u/124207301?v=4',
       descriptionEn : "Hi! Im a creative fullstack developer and game designer",
-      descriptionEs : "Hola! Soy una desarrolladora fullstack creativa y diseñadora de videojuegos"
+      descriptionEs : "Hola! Soy una desarrolladora fullstack creativa y diseñadora de videojuegos",
+      github: 'https://github.com/GKallisti',
+      linkedin: 'https://www.linkedin.com/in/gisella-gkallisti/',
     },
     {
       id: 3,
@@ -27,7 +31,9 @@ const aboutEn = [
       specialization: 'Full-Stack',
       profileImage: 'https://avatars.githubusercontent.com/u/125685144?v=4',
       descriptionEs : 'Tengo habilidades técnicas sólidas y pasión por la implementación de nuevas ideas.Logrando que todos los proyectos en los que he participado destaquen por una funcionalidad e interfaz limpia, pero por sobre todo la calidad humana que brindamos a los usuarios y al equipo de trabajo.',
-      descriptionEn : 'I have solid technical skills and passion for the implementation of new ideas. I can make all projects stand out for their functionality and interface cleanliness, but above all the human quality that we provide to the users and the team.'
+      descriptionEn : 'I have solid technical skills and passion for the implementation of new ideas. I can make all projects stand out for their functionality and interface cleanliness, but above all the human quality that we provide to the users and the team.',
+      github: 'https://github.com/MNahuelRotela',
+      linkedin: 'https://www.linkedin.com/in/nahuelrotela/',
         },
     {
       id: 4,
@@ -35,7 +41,9 @@ const aboutEn = [
       specialization: 'Full-Stack',
       profileImage: 'https://avatars.githubusercontent.com/u/124008724?v=4',
       descriptionEs : 'Hola! Me considero un comodin, puedo trabajar tanto en front-end como en back-end. ',
-      descriptionEn : 'Hi! I consider myself a comodine, I can work both in front-end and back-end.'
+      descriptionEn : 'Hi! I consider myself a comodine, I can work both in front-end and back-end.',
+      github: 'https://github.com/REVelazquez',
+      linkedin: 'https://www.linkedin.com/in/rodrigo-velazquez-9bb156267/',
     },
     {
       id: 5,
@@ -43,7 +51,9 @@ const aboutEn = [
       specialization: 'Full-Stack',
       profileImage: 'https://scontent.fmdq6-1.fna.fbcdn.net/v/t39.30808-6/262592212_4627071680705321_418512524188058664_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_eui2=AeEK44Pc6TfSVdUnowzxMOzyg1_nTFJZaVeDX-dMUllpV1FOgzV2LlAZS__gco1ifT8FrlpecrE74-1H7BHIss7V&_nc_ohc=OnkfXzzO84MAX_LsBjf&_nc_ht=scontent.fmdq6-1.fna&oh=00_AfCMm0RMqH6-z76oTe-G4o1N10X51VK9tpJQQaGjpWWlLw&oe=64D8EB68',
       descriptionEs : 'Heyyo MFs ',
-      descriptionEn : 'Too vieja.'
+      descriptionEn : 'Too vieja.',
+      github: 'https://github.com/Santjagor',
+      linkedin: 'https://www.linkedin.com/in/sms57/',
     },
   ];
 
