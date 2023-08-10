@@ -39,12 +39,12 @@ const Contact = () => {
           <h1>
             <Animations
               letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'u', 's']}
               idx={15}
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially on ambitious
+            We are interested in freelance opportunities - especially on ambitious
             or large projects. However, if you have any other requests or
             questions, don't hesitate to contact me using below form either.
           </p>
@@ -87,7 +87,7 @@ const Contact = () => {
         <div className="info-map">
          Tango Devs
           <br />
-    Argentina 
+            Argentina 
          <br />
           <span>arg.tangodevs@gmail.com</span>
         </div>
