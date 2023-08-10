@@ -12,25 +12,26 @@ const Contact = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault()
+      setLetterClass('text-animate-hover');
+    }, 3000);
+  }, []);
 
-  //   emailjs
-  //     .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
-  //     .then(
-  //       () => {
-  //         alert('Message successfully sent!')
-  //         window.location.reload(false)
-  //       },
-  //       () => {
-  //         alert('Failed to send the message, please try again')
-  //       }
-  //     )
-  // }
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
+      .then(
+        () => {
+          alert('Message successfully sent!')
+          window.location.reload(false)
+        },
+        () => {
+          alert('Failed to send the message, please try again')
+        }
+      )
+  }
 
   return (
     <>
@@ -93,6 +94,7 @@ const Contact = () => {
         </div>
         <div className="map-wrap">
          
+
         </div>
       </div>
       <Loader type="pacman" />
