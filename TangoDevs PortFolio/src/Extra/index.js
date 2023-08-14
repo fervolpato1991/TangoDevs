@@ -51,23 +51,35 @@ const projects = [
     {
         id: 1,
         title: 'LobbyLair',
-        description: 'Red social para gamers donde los jugadores pueden encontrarse en tiempo real, socializar y unirse a otras partidas.',
-        image: 'https://firebasestorage.googleapis.com/v0/b/lobbylair-pf.appspot.com/o/Logo.webp?alt=media&token=ea0389a0-f0d5-4d8b-a9b4-c11af490c453',
+        descriptionES: 'Red social para gamers donde los jugadores pueden encontrarse en tiempo real, socializar y unirse a otras partidas.',
+        descriptionEN: 'Social network for gamers where players can find each other in real time, socialize and join other games.',
+        image: 'https://firebasestorage.googleapis.com/v0/b/stuff-5f064.appspot.com/o/lobbylair.png?alt=media&token=ffd4ad61-49c9-4544-bf8c-2b42da620430',
         link: 'https://lobbylair-gkallisti.vercel.app/',
       },
       {
         id: 2,
-        title: 'Proyecto 2',
-        description: 'Descripción del proyecto 2',
-        image: 'ruta/de/la/imagen2.jpg',
+        title: 'The Bunker Sala',
+        descriptionEN: 'This page was made for a rehearsal room. The objective is, that through it users can receive information on the latest band dates, review the list of equipment that the room has, log in and register shifts, etc.',
+        descriptionES: 'Esta pagina fue hecha para una sala de ensayo. El objetivo es que a traves de ella los usuarios puedan recibir información sobre las fechas de las bandas, revisar la lista de equipos que tiene la sala, iniciar sesion y registrar turnos, etc.',
+        image: 'https://firebasestorage.googleapis.com/v0/b/stuff-5f064.appspot.com/o/thebunker.jpg?alt=media&token=e94a6e25-ebf6-493a-89c1-461a41edd73d',
         link: 'https://enlace-al-proyecto-2.com',
       },
       {
         id: 3,
-        title: 'Proyecto 3',
-        description: 'Descripción del proyecto 3',
-        image: 'ruta/de/la/imagen3.jpg',
+        title: 'Inmobiliaria Pepito',
+        descriptionES: 'Este proyecto fue encargado por una inmobiliaria que necesitaba modernizar sus servicios, asi que nos pidieron que hicieramos una plataforma con una ux ui limpia y amigable.',
+        descriptionEN: 'This project was made for a real estate company that needed to modernize their services, so we made a platform with a clean and friendly ux ui.',
+        image: 'https://firebasestorage.googleapis.com/v0/b/stuff-5f064.appspot.com/o/inmobiliaria.jpeg?alt=media&token=43cd5f9c-5f26-4495-baa3-1cbbd748f106',
         link: 'https://enlace-al-proyecto-3.com',
+      },
+      
+      {
+        id: 4,
+        title: 'Rastafi',
+        descriptioEN: 'This landing page was made for a client who demanded a modern, minimalist and fast page to present his services.',
+        descriptionES: ' Esta pagina de inicio fue hecha para un cliente que exige una pagina moderna, minimalista y rapida para presentar sus servicios.',
+        image: 'https://firebasestorage.googleapis.com/v0/b/stuff-5f064.appspot.com/o/rastafi.png?alt=media&token=f3723ac0-33e2-4075-96e4-ae00f64796a9',
+        link: 'https://enlace-al-proyecto-2.com',
       }
 ]
 

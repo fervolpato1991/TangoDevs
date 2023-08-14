@@ -22,6 +22,16 @@ const SideBar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [showNav, setShowNav] = useState(false);
 
+    const localLanguage= navigator.language.toLowerCase()
+    const [language, setLanguage] = useState(localLanguage.startsWith('es')? 'es': 'en')
+  
+    const changeLanguageEN=()=>{
+      setLanguage('en')
+    }
+    const changeLanguageES=()=>{
+      setLanguage('es')
+    }
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,6 +74,7 @@ const SideBar = () => {
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
+        <button onClick={language === 'es' ? ()=>changeLanguageEN() : ()=>changeLanguageES()}>{language=== 'es' ? 'EN' : 'ES'}</button>
 
             </nav>
         </div>

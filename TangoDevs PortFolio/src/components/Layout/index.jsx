@@ -1,12 +1,15 @@
 import { Outlet } from 'react-router-dom'
-import Sidebar from '../Sidebar/'
+import Sidebar from '../SideBar/index'
 import './index.scss'
 
 
-const Layout = () => {
+const Layout = ({language, changeLanguageEN, changeLanguageES}) => {
+
+
+  
     return (
 <div className='app'>
-   <Sidebar/>
+   <Sidebar language={language} changeLanguageEN={changeLanguageEN} changeLanguageES={changeLanguageES} />
    <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>
 
