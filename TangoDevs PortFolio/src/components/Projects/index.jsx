@@ -1,5 +1,6 @@
 import ProjectCard from '../ProjectCard';
 import { projects } from '../../Extra/index.js';
+import Tech from '../Techs/Tech';
 
 const Projects = (language) => {
 
@@ -23,8 +24,8 @@ const Projects = (language) => {
       </div>
 
       <div className="technologies">
-        <h3>Tecnologías Utilizadas</h3>
-        
+        <h3>Pequeño playground de herramientas que sabemos usar</h3>
+        <Tech />
       </div>
     </div>
   );

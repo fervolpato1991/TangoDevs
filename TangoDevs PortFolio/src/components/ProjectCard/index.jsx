@@ -18,14 +18,14 @@ const ProjectCard = ({ projectData, language }) => {
   );
 };
 
-ProjectCard.propTypes = {
-    projectData: PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      title: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
-      link: PropTypes.string.isRequired,
-    }).isRequired,
-  };
+// ProjectCard.propTypes = {
+//     projectData: PropTypes.shape({
+//       id: PropTypes.number.isRequired,
+//       title: PropTypes.string.isRequired,
+//       description: PropTypes.string.isRequired,
+//       image: PropTypes.string.isRequired,
+//       link: PropTypes.string.isRequired,
+//     }).isRequired,
+//   };
 
 export default ProjectCard;

@@ -55,7 +55,7 @@ const aboutEn = [
       id: 5,
       name: 'Santiago',
       specialization: 'Full-Stack',
-      profileImage: 'https://scontent.fmdq6-1.fna.fbcdn.net/v/t39.30808-6/262592212_4627071680705321_418512524188058664_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_eui2=AeEK44Pc6TfSVdUnowzxMOzyg1_nTFJZaVeDX-dMUllpV1FOgzV2LlAZS__gco1ifT8FrlpecrE74-1H7BHIss7V&_nc_ohc=OnkfXzzO84MAX_LsBjf&_nc_ht=scontent.fmdq6-1.fna&oh=00_AfCMm0RMqH6-z76oTe-G4o1N10X51VK9tpJQQaGjpWWlLw&oe=64D8EB68',
+      profileImage: 'https://firebasestorage.googleapis.com/v0/b/stuff-5f064.appspot.com/o/262592212_4627071680705321_418512524188058664_n.jpg?alt=media&token=c44868d5-9393-4b10-9dea-4f27a20df9d5',
       descriptionEs : 'Heyyo MFs ',
       descriptionEn : 'Too vieja.'
     },

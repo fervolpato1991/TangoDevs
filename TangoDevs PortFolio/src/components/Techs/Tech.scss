@@ -1,0 +1,15 @@
+.contenedordetools {
+    display: flex ;
+    flex-direction: row ;
+    flex-wrap: nowrap ;
+    justify-content: center ;
+    padding: 1em;
+    gap: 10px;
+    width: 25%;
+    height: 30%;
+    position: fixed;
+}
+.tool {
+    width: 30%;
+    height: 30%;
+}
