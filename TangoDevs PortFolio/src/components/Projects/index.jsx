@@ -1,6 +1,7 @@
 import ProjectCard from '../ProjectCard';
 import { projects } from '../../Extra/index.js';
 import Tech from '../Techs/Tech';
+import './index.scss';
 
 const Projects = (language) => {
 
@@ -11,6 +12,7 @@ const Projects = (language) => {
   return (
     <div className='project-container'>
       <div className='intro'>
+
         <h3>Conoce nuestros proyectos:</h3>
         <p>
           En esta sección encontrarás algunos de los proyectos
