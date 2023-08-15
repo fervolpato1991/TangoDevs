@@ -8,7 +8,7 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   const nameArray = ['T', 'a', 'n', 'g', 'o', 'D', 'e', 'v', 's']
-  const jobArray = [ 'A','r','g','e','n','t','i','n','i','a','n',' ','D','e','v','e','l','o','p','e','r','s',' ','U','n','i','t','e','d'   ]
+  const jobArray = [ 'D','e','s','a','r','r','o','l','l','a','d','o','r','e','s',' ', 'A','r','g','e','n','t','i','n','o','s',' ','U','n','i','d','o','s'   ]
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,25 +21,26 @@ const Home = () => {
       <div className="container home-page">
         <div className="text-zone">
           <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}> i, </span>
+            <span className={letterClass}>Hola</span>
+            <span className={`${letterClass} _12`}> !, </span>
             <br />
-            <span className={`${letterClass} _13`}> We </span>
-            <span className={`${letterClass} _14`}> Are </span>
+            <span className={`${letterClass} _13`}> Nosotros </span> 
+            
+            <span className={`${letterClass} _14`}> somos </span>
             
             <Animations
               letterClass={letterClass}
               strArray={nameArray}
-              idx={15}
+              idx={0}
             />
             <br />
             <Animations
               letterClass={letterClass}
               strArray={jobArray}
-              idx={25}
+              idx={0}
             />
           </h1>
-          <h2>Fullstack Developers // Creaive Web Design & Development</h2>
+          <h2> Fullstack Developers // Creaive Web Design & Development</h2>
           <Link to="/contact" className="flat-button">
             CONTACT US
           </Link>

@@ -1,3 +1,17 @@
+import  { faFigma,
+faReact,
+faGit,
+faMongodb,
+faNodejs,
+faTailwind,
+css,
+html,
+threejs,
+javascript
+
+} from "../assets/images/index.js";
+
+
 const aboutEs = [
   { maintext:'Somos un grupo de desarrolladores que amamos los desafios y juntos somos mejores.' }, 
   { subtext:'Nuestro equipo se encuentra formado por:'
@@ -83,9 +97,56 @@ const projects = [
       }
 ]
 
+
+const tools = [
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "React JS",
+    icon: faReact,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: faTailwind,
+  },
+  {
+    name: "Node JS",
+    icon: faNodejs,
+  },
+  {
+    name: "MongoDB",
+    icon: faMongodb,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
+  {
+    name: "git",
+    icon: faGit,
+  },
+  {
+    name: "figma",
+    icon: faFigma,
+  },
+
+
+];
+
 export  {
   aboutEn,
   aboutEs,
   teamMembers,
-  projects
+  projects,
+  tools
   } 
