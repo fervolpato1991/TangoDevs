@@ -10,6 +10,7 @@ const Projects = (language) => {
   }
 
   return (
+    <>
     <div className='project-container'>
       <div className='intro'>
 
@@ -24,12 +25,14 @@ const Projects = (language) => {
           <ProjectCard key={project.id} projectData={project} language={language} />
         ))}
       </div>
-
+     </div>
+     
       <div className="technologies">
-        <h3>Pequeño playground de herramientas que sabemos usar</h3>
+        <h3> Pequeño playground de herramientas que sabemos usar </h3>
         <Tech />
       </div>
-    </div>
+  
+    </>
   );
 };
 
