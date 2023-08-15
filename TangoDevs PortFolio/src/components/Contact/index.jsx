@@ -92,12 +92,9 @@ const Contact = () => {
          <br />
           <span>arg.tangodevs@gmail.com</span>
         </div>
-        <div className="map-wrap">
-         
-
-        </div>
+        
       </div>
-      <Loader type="pacman" />
+     
     </>
   )
 }
