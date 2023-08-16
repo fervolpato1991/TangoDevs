@@ -17,21 +17,26 @@ const Contact = () => {
     }, 3000);
   }, []);
 
-  const sendEmail = (e) => {
-    e.preventDefault()
-
+  const sendEmail = (event) => {
+    event.preventDefault();
+  
+    const userId = 'ePsTtr0xZJnMgBKZH';
+    const serviceId = 'service_6jw38uh';
+    const templateId = 'template_o3j1oh7';
+  
     emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
-      .then(
-        () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
-        },
-        () => {
-          alert('Failed to send the message, please try again')
-        }
-      )
-  }
+  .sendForm(serviceId, templateId, form.current, userId)
+  .then(
+    () => {
+      alert('Message successfully sent!');
+      window.location.reload(false);
+    }
+  )
+  .catch((error) => {
+    console.error('Failed to send the message:', error);
+    alert('Failed to send the message, please try again');
+  });
+  };
 
   return (
     <>
@@ -47,13 +52,13 @@ const Contact = () => {
           <p>
             We are interested in freelance opportunities - especially on ambitious
             or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
+            questions, don't hesitate to contact us using below form either.
           </p>
           <div className="contact-form">
             <form ref={form} >
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
+                  <input placeholder="Name" type="text" name="from_name" required />
                 </li>
                 <li className="half">
                   <input
@@ -85,6 +90,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
+
         <div className="info-map">
          Tango Devs
           <br />
@@ -92,7 +98,7 @@ const Contact = () => {
          <br />
           <span>arg.tangodevs@gmail.com</span>
         </div>
-        
+
       </div>
      
     </>
