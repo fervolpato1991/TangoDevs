@@ -1,12 +1,51 @@
 import './index.scss';
 import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faEnvelope, faCode } from '@fortawesome/free-solid-svg-icons';
-import logo from '../../assets/images/logo-s.png'
- 
+import logo from '../../assets/images/Logo/logo-s.png'
+import { useState, useEffect } from 'react'; 
+ import {
+    faHome,
+    faUser,
+    faEnvelope,
+    faSuitcase,
+  } from '@fortawesome/free-solid-svg-icons'
+
 const SideBar = () => {
+    const [scrolled, setScrolled] = useState(false);
+    const [showNav, setShowNav] = useState(false);
+
+    const localLanguage= navigator.language.toLowerCase()
+    const [language, setLanguage] = useState(localLanguage.startsWith('es')? 'es': 'en')
+  
+    const changeLanguageEN=()=>{
+      setLanguage('en')
+    }
+    const changeLanguageES=()=>{
+      setLanguage('es')
+    }
+  
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
+  
     return (
-        <div className='navBar'>
+        <div className={`${
+            scrolled ? "scrolled" : "navBar"
+          }`} >
             <Link to='/' className='logo'>
                 <img src={logo} alt="TangoDevsLogo"/>
             </Link>
@@ -14,15 +53,21 @@ const SideBar = () => {
                 <NavLink exact="true" activeclassname="active" to="/">
                     <FontAwesomeIcon icon={faHome} color="4d4d4e"/>
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="about" to="/about">
-                    <FontAwesomeIcon icon={faUser} color="4d4d4e"/>
+                <NavLink  activeclassname="active" className="portfolio-link" to="/projects"
+                    onClick={() => setShowNav(false)} >
+          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="contact" to="/contact">
-                    <FontAwesomeIcon icon={faEnvelope} color="4d4d4e"/>
+                <NavLink activeclassname="active" className="about-link" to="/about"
+                onClick={() => setShowNav(false)}>
+                    <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="project" to="/projects">
-                    <FontAwesomeIcon icon={faCode} color="4d4d4e"/>
-                </NavLink>
+
+                <NavLink  activeclassname="active" className="contact-link" to="/contact"
+          onClick={() => setShowNav(false)}>
+          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+        </NavLink>
+        <button onClick={language === 'es' ? ()=>changeLanguageEN() : ()=>changeLanguageES()}>{language=== 'es' ? 'EN' : 'ES'}</button>
+
             </nav>
         </div>
     )

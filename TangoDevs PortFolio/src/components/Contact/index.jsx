@@ -12,6 +12,7 @@ const Contact = () => {
 
   useEffect(() => {
     setTimeout(() => {
+
       setLetterClass('text-animate-hover');
     }, 3000);
   }, []);
@@ -54,7 +55,7 @@ const Contact = () => {
             questions, don't hesitate to contact us using below form either.
           </p>
           <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} >
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="from_name" required />
@@ -89,8 +90,17 @@ const Contact = () => {
             </form>
           </div>
         </div>
+
+        <div className="info-map">
+         Tango Devs
+          <br />
+            Argentina 
+         <br />
+          <span>arg.tangodevs@gmail.com</span>
+        </div>
+
       </div>
-      <Loader type="pacman" />
+     
     </>
   )
 }
