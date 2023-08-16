@@ -26,14 +26,21 @@ const aboutEn = [
       profileImage: 'https://avatars.githubusercontent.com/u/118305965?s=400&u=485f73d77d9b7dd3f3ec80f66f9e263448034945&v=4',
       descriptionEn : "I am a full stack developer currently more oriented to the frontend, with a background in law, I have knowledge in PERN technology, and in libraries such as tailwind, I consider myself a serious and analytical person, with aspirations to work in groups to develop projects such as web pages and in a future creation of videogames or cybersecurity.  ",
       descriptionEs : "Soy desarrollador full stack actualmente mas orientado al frontend, con background en abogacia, poseo conocimientos en tecnologia PERN, y en librerias como tailwind, me considero una persona que seria y analitica, con  aspiraciones a trabajar en grupos desarrollen proyectos tales como paginas web y en un futuro creación de videojuegos o ciberseguridad."
+      github: 'https://github.com/fervolpato1991',
+      linkedin: 'https://www.linkedin.com/in/fernando-volpato-5bb718217/',
+
     },
     {
       id: 2,
       name: 'Gisella',
       specialization: 'Game Designer, Creative Developer',
       profileImage: 'https://avatars.githubusercontent.com/u/124207301?v=4',
+
       descriptionEn : "Hello! I'm a creative fullstack developer and game designer, I specialize in thinking outside the box, making cat memes and developing and programming everything that has to do with creative design",
       descriptionEs : "Hola! Soy una desarrolladora fullstack creativa y diseñadora de videojuegos, me especializo en pensar fuera de cajas, hacer memes y desarrollar y programar todo lo que tenga que ver con diseño creativo."
+    github: 'https://github.com/GKallisti',
+      linkedin: 'https://www.linkedin.com/in/gisella-gkallisti/',
+
     },
     {
       id: 3,
@@ -41,7 +48,9 @@ const aboutEn = [
       specialization: 'Full-Stack',
       profileImage: 'https://avatars.githubusercontent.com/u/125685144?v=4',
       descriptionEs : 'Tengo habilidades técnicas sólidas y pasión por la implementación de nuevas ideas.Logrando que todos los proyectos en los que he participado destaquen por una funcionalidad e interfaz limpia, pero por sobre todo la calidad humana que brindamos a los usuarios y al equipo de trabajo.',
-      descriptionEn : 'I have solid technical skills and passion for the implementation of new ideas. I can make all projects stand out for their functionality and interface cleanliness, but above all the human quality that we provide to the users and the team.'
+      descriptionEn : 'I have solid technical skills and passion for the implementation of new ideas. I can make all projects stand out for their functionality and interface cleanliness, but above all the human quality that we provide to the users and the team.',
+      github: 'https://github.com/MNahuelRotela',
+      linkedin: 'https://www.linkedin.com/in/nahuelrotela/',
         },
     {
       id: 4,
@@ -49,7 +58,9 @@ const aboutEn = [
       specialization: 'Full-Stack',
       profileImage: 'https://avatars.githubusercontent.com/u/124008724?v=4',
       descriptionEs : 'Hola! Me considero un comodin, puedo trabajar tanto en front-end como en back-end. ',
-      descriptionEn : 'Hi! I consider myself a comodine, I can work both in front-end and back-end.'
+      descriptionEn : 'Hi! I consider myself a comodine, I can work both in front-end and back-end.',
+      github: 'https://github.com/REVelazquez',
+      linkedin: 'https://www.linkedin.com/in/rodrigo-velazquez-9bb156267/',
     },
     {
       id: 5,
@@ -57,7 +68,9 @@ const aboutEn = [
       specialization: 'Full-Stack',
       profileImage: 'https://firebasestorage.googleapis.com/v0/b/stuff-5f064.appspot.com/o/262592212_4627071680705321_418512524188058664_n.jpg?alt=media&token=c44868d5-9393-4b10-9dea-4f27a20df9d5',
       descriptionEs : 'Heyyo MFs ',
-      descriptionEn : 'Too vieja.'
+      descriptionEn : 'Too vieja.',
+      github: 'https://github.com/Santjagor',
+      linkedin: 'https://www.linkedin.com/in/sms57/',
     },
   ];
 
