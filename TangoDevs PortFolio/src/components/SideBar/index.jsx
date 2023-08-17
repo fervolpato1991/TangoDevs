@@ -19,9 +19,11 @@ const SideBar = () => {
   
     const changeLanguageEN=()=>{
       setLanguage('en')
+      console.log(setLanguage)
     }
     const changeLanguageES=()=>{
       setLanguage('es')
+      console.log(setLanguage)
     }
   
 
@@ -50,24 +52,25 @@ const SideBar = () => {
                 <img src={logo} alt="TangoDevsLogo"/>
             </Link>
             <nav>
+            <div className="icons">
                 <NavLink exact="true" activeclassname="active" to="/">
-                    <FontAwesomeIcon icon={faHome} color="4d4d4e"/>
+                    <FontAwesomeIcon icon={faHome} color="4d4d4e" className="icon"/>
                 </NavLink>
                 <NavLink  activeclassname="active" className="portfolio-link" to="/projects"
                     onClick={() => setShowNav(false)} >
-          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" className="icon"/>
                 </NavLink>
                 <NavLink activeclassname="active" className="about-link" to="/about"
                 onClick={() => setShowNav(false)}>
-                    <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faUser} color="#4d4d4e" className="icon"/>
                 </NavLink>
 
                 <NavLink  activeclassname="active" className="contact-link" to="/contact"
           onClick={() => setShowNav(false)}>
-          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" className="icon"/>
         </NavLink>
-        <button onClick={language === 'es' ? ()=>changeLanguageEN() : ()=>changeLanguageES()}>{language=== 'es' ? 'EN' : 'ES'}</button>
-
+        <button onClick={language === 'es' ? ()=>changeLanguageEN() : ()=>changeLanguageES()} className="icon">{language=== 'es' ? 'EN' : 'ES'}</button>
+        </div>
             </nav>
         </div>
     )

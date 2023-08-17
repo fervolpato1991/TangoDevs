@@ -1,57 +1,5 @@
+.navBar,
 .scrolled {
-    background: var(--background-color);
-    width: 80px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    min-height: 500px;
-    left: 0;
-    bottom: 0;
-
-    .logo {
-        display: block;
-        padding: auto auto;
-
-        img {
-            display: block;
-            margin-top: 5em;
-            width: 90%;
-            height: auto;
-        }
-
-        nav {
-            display: block;
-            text-align: center;
-            position: fixed;
-            height: 20%;
-            top: 50%;
-            margin-top: -20%;
-            width: 100%;
-    
-            a {
-                font-size: 22px;
-                color: #4d4d4d;
-                display: block;
-                line-height: 50px;
-                height: 50px;
-                position: fixed;
-                text-decoration: none;
-    
-                i {
-                    transition: all 1s ease-out;
-                }
-                &:hover {
-                    color: #c02203;
-                }
-            }
-        }
-
-}
-
-}
-
-.navBar {
     background: var(--background-color);
     width: 80px;
     height: 100%;
@@ -89,13 +37,21 @@
             height: 50px;
             position: relative;
             text-decoration: none;
-
-            i {
-                transition: all 1s ease-out;
-            }
-            &:hover {
-                color: #c02203;
-            }
         }
     }
+}
+.icon {
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: #c02203;
+    }
+}
+button {
+    background: none;
+    border: none;
+    color: #4d4d4d;
+    font-weight: 600;
+    font-size: large;
 }
