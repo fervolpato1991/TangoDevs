@@ -40,9 +40,9 @@ const Home = () => {
               idx={0}
             />
           </h1>
-          <h2> Fullstack Developers // Creaive Web Design & Development</h2>
+          <h2> Fullstack Developers // Creative Web Design & Development</h2>
           <Link to="/contact" className="flat-button">
-            CONTACT US
+            CONTACTANOS
           </Link>
         </div>
       </div>
