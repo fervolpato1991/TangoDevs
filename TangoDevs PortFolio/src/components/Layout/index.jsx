@@ -16,6 +16,7 @@ const Layout = ({language, changeLanguageEN, changeLanguageES}) => {
         <Outlet />
         <span className="tags bottom-tags">
           &lt;/body&gt;
+          
           <br />
           <span className="bottom-tag-html">&lt;/html&gt;</span>
         </span>

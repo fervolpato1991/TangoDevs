@@ -46,11 +46,8 @@ const About = ({ language }) => {
                   </a>
                 </div>
               </section>
-
-              
             ))}
           </div>
-   
       </div>
       </div>
     );

@@ -90,17 +90,14 @@ const Contact = () => {
             </form>
           </div>
         </div>
-
-        <div className="info-map">
-         Tango Devs
-          <br />
-            Argentina 
-         <br />
-          <span>arg.tangodevs@gmail.com</span>
-        </div>
-
+    
       </div>
-     
+      
+      <div className="info-map">
+        <video className='video' autoPlay loop muted playsInline >
+        <source src={'https://firebasestorage.googleapis.com/v0/b/stuff-5f064.appspot.com/o/background.mp4?alt=media&token=00d97760-4e36-45e5-8581-986a279680f1'} type='video/mp4'/>
+      </video>
+        </div>
     </>
   )
 }
