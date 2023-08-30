@@ -115,7 +115,7 @@ const projects = [
         descriptionEN: 'This project was made for a real estate company that needed to modernize their services, so we made a platform with a clean and friendly ux ui.',
         image: 'https://firebasestorage.googleapis.com/v0/b/stuff-5f064.appspot.com/o/inmobiliaria.jpeg?alt=media&token=43cd5f9c-5f26-4495-baa3-1cbbd748f106',
         link: 'https://enlace-al-proyecto-3.com',
-      },,
+      },
       {
         id: 34,
         title: 'Inmobiliaria Pepito',

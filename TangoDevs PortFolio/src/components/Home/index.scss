@@ -15,6 +15,7 @@
       margin: 0;
       font-family: 'Coolvetica';
       font-weight: 400;
+      cursor: default;
   
       &:before {
         content: '<h1>';
@@ -57,6 +58,7 @@
       font-family: sans-serif;
       letter-spacing: 3px;
       animation: fadeIn 1s 1.8s backwards;
+      cursor: default;
     }
   
     .flat-button {
@@ -68,6 +70,8 @@
       text-decoration: none;
       padding: 10px 18px;
       border: 2px solid #000000;
+      border-radius: 4px;
+      text-align: center;
       margin-top: 25px;
       float: left;
       animation: fadeInAnimation 1s 1.8s backwards;

@@ -5,10 +5,16 @@ import Animations from '../Animations'
 import { useEffect, useState } from 'react'
 import  { faFigma ,faReact ,faGit ,faMongodb ,faNodejs ,
 faTailwind, faLinkedin } from '../../assets/images/index.js'
+import PropTypes from 'prop-types';
 
 
 const About = ({ language }) => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  console.log('Language:', language);
+  const [letterClass, setLetterClass] = useState('text-animate');
+
+  About.propTypes = {
+    language: PropTypes.string.isRequired,
+  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -47,8 +53,9 @@ const About = ({ language }) => {
                 </div>
               </section>
             ))}
+            </div>
           </div>
-      </div>
+
       </div>
     );
   };
