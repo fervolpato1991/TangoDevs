@@ -23,11 +23,9 @@ const Home = () => {
           <h1>
             <span className={letterClass}>Hola</span>
             <span className={`${letterClass} _12`}> !, </span>
-            <br />
-            <span className={`${letterClass} _13`}>Nosotros&nbsp;</span> 
-            
+            <br />   
 
-            <span className={`${letterClass} _14`}>somos&nbsp;</span>
+            <span className={`${letterClass} _14`}>Somos&nbsp;</span>
             
             <Animations
               letterClass={letterClass}

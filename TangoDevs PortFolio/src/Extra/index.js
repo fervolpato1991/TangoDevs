@@ -116,36 +116,7 @@ const projects = [
         image: 'https://firebasestorage.googleapis.com/v0/b/stuff-5f064.appspot.com/o/inmobiliaria.jpeg?alt=media&token=43cd5f9c-5f26-4495-baa3-1cbbd748f106',
         link: 'https://enlace-al-proyecto-3.com',
       },
-      {
-        id: 34,
-        title: 'Inmobiliaria Pepito',
-        descriptionES: 'Este proyecto fue encargado por una inmobiliaria que necesitaba modernizar sus servicios, asi que nos pidieron que hicieramos una plataforma con una ux ui limpia y amigable.',
-        descriptionEN: 'This project was made for a real estate company that needed to modernize their services, so we made a platform with a clean and friendly ux ui.',
-        image: 'https://firebasestorage.googleapis.com/v0/b/stuff-5f064.appspot.com/o/inmobiliaria.jpeg?alt=media&token=43cd5f9c-5f26-4495-baa3-1cbbd748f106',
-        link: 'https://enlace-al-proyecto-3.com',
-      },
-      {
-        id: 33,
-        title: 'Inmobiliaria Pepito',
-        descriptionES: 'Este proyecto fue encargado por una inmobiliaria que necesitaba modernizar sus servicios, asi que nos pidieron que hicieramos una plataforma con una ux ui limpia y amigable.',
-        descriptionEN: 'This project was made for a real estate company that needed to modernize their services, so we made a platform with a clean and friendly ux ui.',
-        image: 'https://firebasestorage.googleapis.com/v0/b/stuff-5f064.appspot.com/o/inmobiliaria.jpeg?alt=media&token=43cd5f9c-5f26-4495-baa3-1cbbd748f106',
-        link: 'https://enlace-al-proyecto-3.com',
-      },     {
-        id: 6,
-        title: 'Inmobiliaria Pepito',
-        descriptionES: 'Este proyecto fue encargado por una inmobiliaria que necesitaba modernizar sus servicios, asi que nos pidieron que hicieramos una plataforma con una ux ui limpia y amigable.',
-        descriptionEN: 'This project was made for a real estate company that needed to modernize their services, so we made a platform with a clean and friendly ux ui.',
-        image: 'https://firebasestorage.googleapis.com/v0/b/stuff-5f064.appspot.com/o/inmobiliaria.jpeg?alt=media&token=43cd5f9c-5f26-4495-baa3-1cbbd748f106',
-        link: 'https://enlace-al-proyecto-3.com',
-      },     {
-        id: 8,
-        title: 'Inmobiliaria Pepito',
-        descriptionES: 'Este proyecto fue encargado por una inmobiliaria que necesitaba modernizar sus servicios, asi que nos pidieron que hicieramos una plataforma con una ux ui limpia y amigable.',
-        descriptionEN: 'This project was made for a real estate company that needed to modernize their services, so we made a platform with a clean and friendly ux ui.',
-        image: 'https://firebasestorage.googleapis.com/v0/b/stuff-5f064.appspot.com/o/inmobiliaria.jpeg?alt=media&token=43cd5f9c-5f26-4495-baa3-1cbbd748f106',
-        link: 'https://enlace-al-proyecto-3.com',
-      },
+      
 ]
 
 
